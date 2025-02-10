@@ -1,0 +1,31 @@
+#player {
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 10);
+  }
+
+  .video-container {
+    flex: 1;
+  }
+
+  .controls {
+    background-color: black;
+    display: flex;
+  }
+
+  .flex-grow{
+    flex-grow: 1;
+  }
+
+  .button {
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    font-size: 130%;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
