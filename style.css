@@ -13,10 +13,15 @@
   .controls {
     background-color: black;
     display: flex;
+    align-items: center;
   }
 
   .flex-grow{
     flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: "Roboto 400";
   }
 
   .button {
