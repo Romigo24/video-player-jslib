@@ -1,54 +1,57 @@
 #player {
-    width: 800px;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 10);
-  }
+  width: 800px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 10);
+}
 
-  .video-container {
-    flex: 1;
-  }
+.video-container {
+  flex: 1;
+}
 
-  .controls {
-    background-color: black;
-    display: flex;
-    align-items: center;
-  }
+.controls {
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
 
-  .player-time-progress {
-    flex-grow: 1;
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    font-family: "Roboto 400";
-    align-items: center;
-
-  }
+.player-time-progress {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-family: "Roboto 400";
+  align-items: center;
+}
  
-  .button {
-    border: none;
-    cursor: pointer;
-    color: white;
-    background-color: transparent;
-    font-size: 120%;
-    width: 25px;
-    height: 32px;
-    margin: 5px;
-  }
+.button {
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+  font-size: 120%;
+  width: 25px;
+  height: 32px;
+  margin: 5px;
+}
 
-  .video-progress {
-    display: flex;
-    cursor: pointer;
-    flex-direction: row;
-    background-color: black;
-    height: 5px;
-    border-radius: 20px;
-    margin-left: 10px;
-    flex-grow: 1;
-    margin-right: 10px;
-    align-items: center;
-  }
+.video-progress {
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  background-color: black;
+  height: 5px;
+  border-radius: 20px;
+  margin-left: 10px;
+  flex-grow: 1;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.video-progress:hover .slider{
+  opacity: 1
+}
 
 .video-progress-bar {
   background-color: red;
@@ -66,4 +69,6 @@
   background-color: red;
   border-radius: 50%;
   display: inline-block;
+  transition-duration: 300ms;
+  opacity: 0;
 }
